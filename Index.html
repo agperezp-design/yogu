@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogu - Gourmet Yogurt & Más</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FAFAFA] text-[#2C3E50]">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- LOGO INCORPORADO EN LA BARRA DE NAVEGACIÓN -->
+            <a href="#inicio" class="flex items-center space-x-3">
+                <img src="logo.jfif" 
+                     onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d_s/download_placeholder';" 
+                     alt="Yogu Logo" 
+                     class="w-12 h-12 rounded-full object-cover shadow-sm border border-purple-200">
+                <span class="text-2xl font-bold text-[#4a2e5d]">Yogu</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 font-semibold">
+                <a href="#inicio" class="hover:text-[#4CAF50] transition">Inicio</a>
+                <a href="#historia" class="hover:text-[#4CAF50] transition">Nuestra Historia</a>
+                <a href="#menu" class="hover:text-[#4CAF50] transition">Menú y Precios</a>
+                <a href="#toppings" class="hover:text-[#4CAF50] transition">Toppings</a>
+                <a href="#promos" class="hover:text-[#4CAF50] transition">Promociones</a>
+                <a href="#ubicacion" class="hover:text-[#4CAF50] transition">Ubicaciones</a>
+            </nav>
+            <a href="#ubicacion" class="bg-[#FF6B6B] text-white px-5 py-2 rounded-full font-bold shadow-md hover:bg-[#ff5252] transition">Visítanos</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN INICIO (HERO) CON TU LOGO -->
+    <section id="inicio" class="py-16 md:py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 space-y-6">
+            <span class="bg-[#A8E6CF]/30 text-[#4CAF50] font-bold px-4 py-1.5 rounded-full text-sm">100% Saludable y Vital</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Alimenta tu cuerpo con los mejores <span class="text-[#FF6B6B]">sabores naturales</span></h2>
+            <p class="text-gray-600 text-lg">Cuando comes Yogu disfrutas de un delicioso postre saludable y vital para tu cuerpo, acompañado de los toppings más frescos.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#menu" class="bg-[#4CAF50] text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-[#43a047] transition">Ver Tamaños y Precios</a>
+                <a href="#promos" class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-[#ff5252] transition">¡Ver Promo!</a>
+            </div>
+        </div>
+        
+        <!-- LOGO GRANDE DESTACADO EN LA PORTADA -->
+        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+            <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <img src="logo.jfif" 
+                     onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d_s/download_placeholder';" 
+                     alt="Yogu Gourmet Yogurt" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA, GIF ANIMADO Y OBJETIVO -->
+    <section id="historia" class="py-16 bg-white px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+            <!-- Nuestra Historia -->
+            <div class="bg-[#FAFAFA] p-8 rounded-3xl border border-gray-100 shadow-sm h-full flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4 text-[#FF6B6B]">Nuestra Historia</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Somos una heladería de yogur familiar, que surgió de la necesidad de ofrecerles a todos nuestros clientes helados de yogur saludables para que puedan disfrutar solos o con sus seres queridos.
+                </p>
+            </div>
+
+            <!-- GIF ANIMADO ENMEDIO DE HISTORIA Y OBJETIVO -->
+            <div class="flex justify-center">
+                <div class="w-64 h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-[#A8E6CF]">
+                    <img src="animacion-yogur.gif" 
+                         alt="Preparación animada de yogur Yogu" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Nuestro Objetivo -->
+            <div class="bg-[#FAFAFA] p-8 rounded-3xl border border-gray-100 shadow-sm h-full flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4 text-[#4CAF50]">Nuestro Objetivo</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Alimentar tu cuerpo con los mejores sabores, con toppings frescos y naturales, y que cuando comes Yogu disfrutas de un delicioso postre saludable y vital para tu cuerpo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SABORES Y TAMAÑOS -->
+    <section id="menu" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold mb-3">Nuestros Sabores y Tamaños de Tu Yogu</h3>
+            <p class="text-gray-600">Elige tu base favorita y el tamaño ideal para ti</p>
+        </div>
+
+        <div class="grid md:grid-cols-5 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100">
+                <div class="text-3xl mb-2">🌿</div>
+                <h4 class="font-bold text-lg">Yogur Natural</h4>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100">
+                <div class="text-3xl mb-2">🥛</div>
+                <h4 class="font-bold text-lg">Yogur Griego Natural</h4>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100">
+                <div class="text-3xl mb-2">🫐</div>
+                <h4 class="font-bold text-lg">Arándanos</h4>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100">
+                <div class="text-3xl mb-2">🍓</div>
+                <h4 class="font-bold text-lg">Fresa</h4>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100">
+                <div class="text-3xl mb-2">✨</div>
+                <h4 class="font-bold text-lg">Sabor Temporada</h4>
+            </div>
+        </div>
+
+        <!-- TAMAÑOS Y PRECIOS -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 max-w-4xl mx-auto">
+            <h4 class="text-2xl font-bold text-center mb-8 text-[#FF6B6B]">Elige tu Tamaño</h4>
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-[#FAFAFA] rounded-2xl border border-gray-200">
+                    <p class="font-bold text-gray-500">Pequeño</p>
+                    <p class="text-xl font-extrabold text-[#4CAF50] my-1">8oz</p>
+                    <p class="text-lg font-bold text-gray-800">C$100</p>
+                </div>
+                <div class="p-4 bg-[#FAFAFA] rounded-2xl border border-gray-200">
+                    <p class="font-bold text-gray-500">Mediano</p>
+                    <p class="text-xl font-extrabold text-[#4CAF50] my-1">10oz</p>
+                    <p class="text-lg font-bold text-gray-800">C$150</p>
+                </div>
+                <div class="p-4 bg-[#FAFAFA] rounded-2xl border border-gray-200">
+                    <p class="font-bold text-gray-500">Grande</p>
+                    <p class="text-xl font-extrabold text-[#4CAF50] my-1">12oz</p>
+                    <p class="text-lg font-bold text-gray-800">C$190</p>
+                </div>
+                <div class="p-4 bg-[#FAFAFA] rounded-2xl border border-gray-200">
+                    <p class="font-bold text-gray-500">Extra Grande</p>
+                    <p class="text-xl font-extrabold text-[#4CAF50] my-1">14oz</p>
+                    <p class="text-lg font-bold text-gray-800">C$250</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOPPINGS -->
+    <section id="toppings" class="py-16 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-4">Toppings Frescos y Naturales</h3>
+            <p class="text-gray-600 mb-10">Personaliza tu Yogu con tu combinación favorita</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🌰</span><span class="font-semibold text-sm">Almendras</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🥜</span><span class="font-semibold text-sm">Pistacho</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🥣</span><span class="font-semibold text-sm">Granola</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">✨</span><span class="font-semibold text-sm">Chispitas</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍬</span><span class="font-semibold text-sm">Gomas de Frutas</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍫</span><span class="font-semibold text-sm">Chispa de Chocolate</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍓</span><span class="font-semibold text-sm">Fruta Fresa</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍌</span><span class="font-semibold text-sm">Banano</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🥝</span><span class="font-semibold text-sm">Kiwi</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🥭</span><span class="font-semibold text-sm">Mango</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍇</span><span class="font-semibold text-sm">Uva</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍯</span><span class="font-semibold text-sm">Sirope Chamoy</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🍓</span><span class="font-semibold text-sm">Sirope Fresa</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🥜</span><span class="font-semibold text-sm">Mantequilla Maní</span></div>
+                <div class="p-4 bg-[#FAFAFA] rounded-xl border border-gray-100 flex flex-col items-center"><span class="text-3xl mb-2">🟢</span><span class="font-semibold text-sm">Mantequilla Pistacho</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOCIONES, SEGUNDO GIF Y TARJETA DE FRECUENCIA -->
+    <section id="promos" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+            
+            <!-- 1. Promoción Especial -->
+            <div class="bg-gradient-to-br from-[#FF6B6B] to-[#ff8b94] text-white p-8 rounded-3xl shadow-lg flex flex-col justify-between h-full">
+                <div>
+                    <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Promoción Especial</span>
+                    <h3 class="text-3xl font-extrabold mt-4 mb-2">¡Llévanos contigo!</h3>
+                    <p class="text-lg opacity-95">Si compras <strong>dos vasos extra grandes</strong>, ¡te obsequiamos un helado pequeño completamente gratis!</p>
+                </div>
+                <div class="mt-6">
+                    <span class="inline-block bg-white text-[#FF6B6B] font-bold px-4 py-2 rounded-full text-sm">¡Aplica en sucursales!</span>
+                </div>
+            </div>
+
+            <!-- 2. SEGUNDO GIF ANIMADO ENMEDIO -->
+            <div class="flex justify-center">
+                <div class="w-64 h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-[#FF6B6B]">
+                    <!-- Coloca tu segundo archivo gif en la misma carpeta y cámbiale el nombre si es necesario -->
+                    <img src="animacion-promo.gif" 
+                         alt="Promoción animada Yogu" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- 3. Tarjeta de Membresía -->
+            <div class="bg-gradient-to-br from-[#4CAF50] to-[#81c784] text-white p-8 rounded-3xl shadow-lg flex flex-col justify-between h-full">
+                <div>
+                    <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Cliente Frecuente</span>
+                    <h3 class="text-3xl font-extrabold mt-4 mb-2">Tarjeta de Membresía Yogu</h3>
+                    <p class="text-lg opacity-95">¡Consulta siempre por nuestra tarjeta de membresía de cliente frecuente y acumula beneficios en cada visita!</p>
+                </div>
+                <div class="mt-6">
+                    <span class="inline-block bg-white text-[#4CAF50] font-bold px-4 py-2 rounded-full text-sm">Preguntá por ella en caja</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- UBICACIONES Y HORARIOS -->
+    <section id="ubicacion" class="py-16 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h3 class="text-3xl font-bold mb-3">Visítanos y Pide a Domicilio</h3>
+            <p class="text-gray-600">Estamos cerca de ti en Managua</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-[#FAFAFA] p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+                <div class="text-4xl mb-3">📍</div>
+                <h4 class="font-bold text-xl mb-2 text-[#FF6B6B]">Multicentro</h4>
+                <p class="text-gray-600 mb-4">Te esperamos con la mejor actitud para servirte.</p>
+                <a href="https://maps.google.com" target="_blank" class="inline-block text-sm font-bold bg-[#2C3E50] text-white px-4 py-2 rounded-full hover:bg-black transition">Ver en GPS</a>
+            </div>
+            <div class="bg-[#FAFAFA] p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+                <div class="text-4xl mb-3">📍</div>
+                <h4 class="font-bold text-xl mb-2 text-[#FF6B6B]">Metrocentro</h4>
+                <p class="text-gray-600 mb-4">Disfruta tu Yogu favorito en nuestro punto de Metrocentro.</p>
+                <a href="https://maps.google.com" target="_blank" class="inline-block text-sm font-bold bg-[#2C3E50] text-white px-4 py-2 rounded-full hover:bg-black transition">Ver en GPS</a>
+            </div>
+        </div>
+
+        <!-- Pedidos Ya y Horario -->
+        <div class="max-w-4xl mx-auto bg-[#FAFAFA] p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+            <div class="flex flex-col md:flex-row justify-around items-center gap-6">
+                <div>
+                    <h5 class="font-bold text-lg text-[#4CAF50] mb-1">⏰ Horario de Atención</h5>
+                    <p class="text-gray-600">Lunes a Domingo: 10:00 AM a 8:00 PM</p>
+                </div>
+                <div class="border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
+                    <h5 class="font-bold text-lg text-[#FF6B6B] mb-1">🛵 Entregas a tu Hogar</h5>
+                    <p class="text-gray-600">Pídenos por <strong>Pedidos Ya</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-[#2C3E50] text-white py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <div class="flex justify-center items-center space-x-2">
+                <img src="logo.jfif" 
+                     onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d_s/download_placeholder';" 
+                     alt="Yogu Logo" 
+                     class="w-8 h-8 rounded-full object-cover">
+                <h4 class="text-2xl font-bold">Yogu</h4>
+            </div>
+            <p class="text-gray-300">¡Endulza tu día de forma saludable y vital!</p>
+            <div class="text-sm text-gray-300 space-y-1">
+                <p><strong>Contacto:</strong> Alda Pérez | Teléfono: <a href="tel:22558842" class="underline hover:text-white">22558842</a></p>
+                <p><strong>Correo:</strong> <a href="mailto:yoguGoodhealt@gmail.com" class="underline hover:text-white">yoguGoodhealt@gmail.com</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/yoguGoodfrozeen" target="_blank" class="underline hover:text-white">@yoguGoodfrozeen</a></p>
+            </div>
+            <p class="text-gray-400 text-xs pt-4 border-t border-gray-700">© 2026 Yogu. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+</html>
